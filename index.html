@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LP制作ポートフォリオ</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;background:#14161a;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+  .wrap{max-width:900px;width:100%}
+  h1{font-size:clamp(24px,4vw,36px);margin-bottom:8px}
+  p.lead{color:#9aa0aa;margin-bottom:36px}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  a.card{display:block;background:#1d2025;border:1px solid #2a2d33;border-radius:14px;padding:24px;text-decoration:none;color:#fff;transition:transform .15s ease, border-color .15s ease}
+  a.card:hover{transform:translateY(-3px);border-color:#ff5a3c}
+  a.card h2{font-size:18px;margin-bottom:8px}
+  a.card p{color:#9aa0aa;font-size:14px;line-height:1.6}
+  .tag{display:inline-block;font-size:12px;font-weight:700;color:#ff8a6c;letter-spacing:.05em;margin-bottom:10px}
+  footer{margin-top:36px;font-size:12px;color:#6b7280}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>LP制作ポートフォリオ</h1>
+  <p class="lead">表示速度・計測精度にこだわったLP制作のデモサイト集です（すべて架空の店舗・サービスを想定したポートフォリオ用サンプルです）。</p>
+  <div class="grid">
+    <a class="card" href="flex-base/">
+      <span class="tag">FITNESS</span>
+      <h2>FLEX BASE</h2>
+      <p>個人ジム向けLP。軽量設計・高速表示・スマホ対応。</p>
+    </a>
+    <a class="card" href="lumiere/">
+      <span class="tag">BEAUTY</span>
+      <h2>LUMIÈRE</h2>
+      <p>エステサロン向けLP。パステル配色・ナチュラルトーン対応。</p>
+    </a>
+    <a class="card" href="backops/">
+      <span class="tag">B2B SaaS</span>
+      <h2>BackOps</h2>
+      <p>バックオフィスDX支援の資料請求LP。ダッシュボードモック付き。</p>
+    </a>
+  </div>
+  <footer>Web制作・LP制作のご相談はココナラのプロフィールからお気軽にどうぞ。</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>資料請求LP デモ｜バックオフィスDX支援</title>
+<style>
+  :root{
+    --ink:#0f1b2d;
+    --sub:#5b6b80;
+    --bg:#ffffff;
+    --bg-alt:#f4f7fb;
+    --accent:#1c5cff;
+    --accent-dark:#123fb8;
+    --line:#e3e8f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75}
+  .sample-badge{background:#0f1b2d;color:#fff;text-align:center;font-size:12px;letter-spacing:.05em;padding:6px 10px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--line)}
+  .logo{font-weight:800;font-size:19px;letter-spacing:-.01em}
+  .logo span{color:var(--accent)}
+  .nav-cta{background:var(--accent);color:#fff;padding:11px 22px;border-radius:8px;font-size:14px;text-decoration:none;font-weight:700}
+
+  .hero{padding:56px 0 60px;background:linear-gradient(180deg,#eef3ff 0%,#fff 65%)}
+  .hero-inner{display:grid;gap:32px;align-items:center}
+  @media(min-width:900px){.hero-inner{grid-template-columns:1.05fr .95fr}}
+  .eyebrow{display:inline-flex;background:#e3ecff;color:var(--accent-dark);font-weight:800;font-size:12px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(28px,3.8vw,42px);line-height:1.4;font-weight:800;letter-spacing:-.01em;margin-bottom:18px}
+  h1 em{color:var(--accent);font-style:normal}
+  .hero p.lead{color:var(--sub);font-size:15px;margin-bottom:28px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:16px 28px;border-radius:10px;font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 16px 30px -14px rgba(28,92,255,.5)}
+  .stats{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+  .stats div b{display:block;font-size:24px;color:var(--accent-dark)}
+  .stats div span{font-size:12px;color:var(--sub)}
+
+  .mock{background:#0f1b2d;border-radius:16px;overflow:hidden;box-shadow:0 40px 70px -30px rgba(15,27,45,.4)}
+  .mock .bar{height:34px;background:#182742;display:flex;align-items:center;gap:7px;padding:0 14px}
+  .mock .bar span{width:10px;height:10px;border-radius:50%;background:#33456b}
+  .mock .body{padding:26px;color:#fff}
+  .mock .row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
+  .mock .chip{background:#1c5cff;color:#fff;font-size:11px;padding:3px 10px;border-radius:999px}
+  .mock .chip.ok{background:#1fae67}
+
+  section{padding:60px 0}
+  .section-head{text-align:center;max-width:620px;margin:0 auto 36px}
+  .section-head .tag{color:var(--accent-dark);font-weight:800;font-size:12px;letter-spacing:.08em}
+  .section-head h2{font-size:clamp(22px,3vw,30px);margin:8px 0;font-weight:800}
+  .cards{display:grid;gap:18px}
+  @media(min-width:720px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--bg-alt);border-radius:14px;padding:26px}
+  .card h3{font-size:16px;margin-bottom:8px;font-weight:800}
+  .card p{color:var(--sub);font-size:13px}
+
+  .cta{background:var(--ink);border-radius:20px;padding:44px 28px;text-align:center;color:#fff;margin:0 24px}
+  .cta h2{font-size:clamp(20px,3vw,28px);margin-bottom:10px}
+  .cta p{color:#a9b6cc;margin-bottom:22px;font-size:14px}
+
+  footer{padding:32px 0;text-align:center;color:var(--sub);font-size:12px}
+</style>
+</head>
+<body>
+<div class="sample-badge">PORTFOLIO SAMPLE — 本デモは架空のサービスを想定したポートフォリオ用サンプルです</div>
+<header>
+  <div class="logo">Back<span>Ops</span></div>
+  <a class="nav-cta" href="#">資料をダウンロード</a>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">バックオフィスDX支援</span>
+      <h1>経理・請求業務の<br>手間を、<em>月20時間</em>削減。</h1>
+      <p class="lead">請求書発行から入金消込まで、バラバラな業務を1つのダッシュボードに。導入企業の平均作業時間は導入前比40%減。</p>
+      <a class="btn" href="#">資料請求（無料）</a>
+      <div class="stats">
+        <div><b>320社+</b><span>導入企業数（想定値）</span></div>
+        <div><b>40%</b><span>作業時間削減（想定値）</span></div>
+        <div><b>2週間</b><span>導入までの平均期間</span></div>
+      </div>
+    </div>
+    <div class="mock">
+      <div class="bar"><span></span><span></span><span></span></div>
+      <div class="body">
+        <div class="row"><span>請求書 #0231</span><span class="chip ok">送付済</span></div>
+        <div class="row"><span>入金消込 9月分</span><span class="chip">処理中</span></div>
+        <div class="row"><span>経費精算 承認待ち</span><span class="chip">3件</span></div>
+        <div class="row" style="border-bottom:none"><span>月次レポート</span><span class="chip ok">自動生成</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">FEATURES</span>
+      <h2>選ばれる3つの理由</h2>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>既存フローそのまま連携</h3><p>今お使いの会計ソフトや請求書フォーマットを変えずに、データ連携だけで導入できます。</p></div>
+      <div class="card"><h3>承認フローの自動化</h3><p>経費精算・支払い申請の承認をチャット通知と連動。差し戻しの手間を減らします。</p></div>
+      <div class="card"><h3>専任担当による導入支援</h3><p>導入初月は専任担当が伴走。設定代行から社内説明会までサポートします。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta">
+    <h2>まずは資料をご覧ください</h2>
+    <p>導入事例・料金プランをまとめた資料を無料でお送りします。</p>
+    <a class="btn" href="#">資料をダウンロードする</a>
+  </div>
+</section>
+
+<footer>&copy; 2026 BackOps（架空のサービス／ポートフォリオデモ）</footer>
+</body>
+</html>
